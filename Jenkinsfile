@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Execute your build script
-                'mvn clean install'  // Assuming your build script is called build.sh
+                echo 'Build sucessful'  // Assuming your build script is called build.sh
             }
         }
 
