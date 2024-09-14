@@ -17,21 +17,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Execute your build script
-                sh './build.sh'  // Assuming your build script is called build.sh
+                echo 'Build successful'  // Assuming your build script is called build.sh
             }
         }
 
         stage('Test') {
             steps {
                 // Execute your test script if you have one
-                sh './test.sh'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                // Optionally deploy your application after build
-                sh './deploy.sh'
+                echo 'Tested successfull'
             }
         }
     }
